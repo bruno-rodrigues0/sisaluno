@@ -2,7 +2,7 @@
   "name": "sisaluno",
   "version": "1.0.0",
   "description": "Sistema de Alunos do 2AII",
-  "main": "./src/index.html",
+  "main": "./src/index.php",
   "author": "Fizene <119943937+bruno-rodrigues0@users.noreply.github.com>",
   "license": "MIT",
   "private": false
