@@ -1,0 +1,38 @@
+body{
+    background-image: linear-gradient(rgb(88, 88, 213), rgb(54, 54, 123));
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+main{
+    border: none;
+    border-radius: 8px;
+    background-color: rgb(221, 239, 246);
+    width: 500px;
+    height: 300px;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+nav > ul{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 24px;
+}
+
+li > a{
+    padding: 8px;
+    font-size: 1.5rem;
+}
+
+li > a:hover{
+    border-bottom: 1px solid rgb(104, 104, 182);
+}
