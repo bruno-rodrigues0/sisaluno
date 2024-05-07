@@ -5,5 +5,11 @@
   "main": "./src/index.php",
   "author": "Fizene <119943937+bruno-rodrigues0@users.noreply.github.com>",
   "license": "MIT",
-  "private": false
+  "private": false,
+  "scripts": {
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.5"
+  }
 }
