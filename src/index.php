@@ -4,26 +4,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sistema aluno</title>
-    <link rel="shortcut icon" href="./../public/favicon.ico" type="image/x-icon">
+    <title>Professor | Sistema aluno</title>
+    <link rel="shortcut icon" href="./../../../public/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./globals.css">
-    <link rel="stylesheet" href="./styles/index.css">
 </head>
 
 <body>
+    <side-menu>
+    </side-menu>
+
     <main>
-        <h1>Sisaluno</h1>
-        <nav>
-            <ul>
-                <li>
-                    <a href="./routes/aluno.php">Aluno</a>
-                </li>
-                <li>
-                    <a href="./routes/professor.php">Professor</a>
-                </li>
-            </ul>
-        </nav>
+        <h2>Lista de alunos cadastrados</h2>
+        <table>
+            <tr>
+                <th>Nome</th>
+                <th>GitHub</th>
+                <th>Email</th>
+                <th>Endereço</th>
+                <th>Nascimento</th>
+            </tr>
+            <tr>
+                <td>Bruno</td>
+                <td>Bruno</td>
+                <td>Bruno</td>
+                <td>Bruno</td>
+                <td>Bruno</td>
+            </tr>
+        </table>
     </main>
+   
+    <script src="./../dist/components/sidemenu.js"></script>
 </body>
 
 </html>
