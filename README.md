@@ -4,7 +4,7 @@
 
 ---
 
-### 🖥️ Tecnologas utilizadas
+### 🖥️ Tecnologias utilizadas
 
 - <img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" align="center">
 - <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" align="center">
