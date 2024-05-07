@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Professor | Sistema aluno</title>
     <link rel="shortcut icon" href="./../../../public/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./globals.css">
+    <link rel="stylesheet" href="./../globals.css">
 </head>
 
 <body>
@@ -33,7 +33,8 @@
         </table>
     </main>
    
-    <script src="./../dist/components/sidemenu.js"></script>
+    <script src="./../../dist/components/sidemenu.js"></script>
+    <script src="https://kit.fontawesome.com/19ad99d8f1.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

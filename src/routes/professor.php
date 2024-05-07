@@ -33,8 +33,9 @@
             </tr>
         </table>
     </main>
-   
+
     <script src="./../../dist/components/sidemenu.js"></script>
+    <script src="https://kit.fontawesome.com/19ad99d8f1.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

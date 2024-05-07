@@ -7,7 +7,6 @@
     <title>Disciplinas | Sistema aluno</title>
     <link rel="shortcut icon" href="./../../../public/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./../globals.css">
-    <link rel="stylesheet" href="./../styles/professor.css">
 </head>
 
 <body>
@@ -35,6 +34,7 @@
     </main>
    
     <script src="./../../dist/components/sidemenu.js"></script>
+    <script src="https://kit.fontawesome.com/19ad99d8f1.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

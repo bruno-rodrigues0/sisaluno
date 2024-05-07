@@ -28,3 +28,42 @@ body{
     display: flex;
 }
 
+aside {
+    background-color: #223648;
+    width: 350px;
+    height: 100vh;
+    padding: 32px;
+    color:  white !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+aside > nav > ul{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+aside > nav > ul > li > a{
+    color: white !important;
+    font-size: larger;
+    border-bottom: 1px solid #223648;
+    transition: 0.1s ease-in-out;
+}
+
+aside > nav > ul > li {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+aside > div {
+    display: flex;
+    gap: 16px;
+}
+
+aside > div > h1 {
+    font-size: xx-large;
+}
+
