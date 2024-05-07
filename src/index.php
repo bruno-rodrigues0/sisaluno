@@ -16,7 +16,7 @@
         <nav>
             <ul>
                 <li>
-                    <a href="#">Aluno</a>
+                    <a href="./routes/aluno.php">Aluno</a>
                 </li>
                 <li>
                     <a href="./routes/professor.php">Professor</a>

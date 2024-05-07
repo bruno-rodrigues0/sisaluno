@@ -18,3 +18,63 @@ input{
     border: none;
     border-radius: 8px;
 }
+
+header{
+    background-color: rgb(118, 118, 251);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 48px;
+    width: 100vw;
+}
+
+footer{
+    background-color: rgb(118, 118, 251);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 48px;
+    width: 100vw;
+    bottom: 0;
+    position: absolute;
+}
+
+footer > nav, footer > span, footer > div {
+    width: 20vw;
+}
+
+footer > nav > ul{
+    display: flex;
+    gap: 16px;
+}
+
+footer > nav > ul > li > a{
+    color: white;
+    font-size: 1.2rem;
+}
+
+footer >span{
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+header > nav > ul{
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+}
+
+header > nav > ul > li > a{
+    color: white;
+    font-size: 1.3rem;
+}
+
+header > nav, header > h1, header > div {
+    width: 20vw;
+}
+
+header > h1{
+    color: white !important;
+}
+
