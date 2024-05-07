@@ -12,6 +12,11 @@
 <body>
 
     <side-menu>
+        <i slot="house" class="fa-solid fa-house"></i>
+        <i slot="person" class="fa-solid fa-chalkboard-user"></i>
+        <i slot="user" class="fa-solid fa-user"></i>
+        <i slot="database" class="fa-solid fa-database"></i>
+        <i slot="logout" class="fa-solid fa-right-from-bracket"></i>
     </side-menu>
     
     <main>

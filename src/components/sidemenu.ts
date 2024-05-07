@@ -1,5 +1,5 @@
-const template = document.createElement("template");
-template.innerHTML = `
+const sidemenuTemplate = document.createElement("template");
+sidemenuTemplate.innerHTML = `
 <link rel="stylesheet" href="./../globals.css">
 
 <aside>
@@ -10,27 +10,27 @@ template.innerHTML = `
 <nav>
     <ul>
         <li>
-            <i class="fa-solid fa-house"></i>
+            <slot name="house"></slot>
             <a href="./index.php">Inicio</a>
         </li>
         <li>
-            <i class="fa-solid fa-person-chalkboard"></i>
+            <slot name="person"></slot>
             <a href="./professor.php">Professores</a>
         </li>
         <li>
-            <i class="fa-solid fa-user"></i>
+            <slot name="user"></slot>
             <a href="./aluno.php">Alunos</a>
         </li>
         <li>
-            <i class="fa-solid fa-database"></i>
+            <slot name="database"></slot>
             <a href="./disciplinas.php">Disciplinas</a>
         </li>
     </ul>
 </nav>
 <nav>
     <ul>
-        <li>
-              <i class="fa-solid fa-right-from-bracket"></i>
+        <li>      
+            <slot name="logout"></slot>
             <a href="">Logout</a>
         </li>
     </ul>
@@ -44,7 +44,7 @@ class SideMenu extends HTMLElement {
     constructor() {
         super();
         this.attachShadow({ mode: "open" });
-        this.shadowRoot?.appendChild(template.content.cloneNode(true));
+        this.shadowRoot?.appendChild(sidemenuTemplate.content.cloneNode(true));
     }
 }
 
