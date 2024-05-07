@@ -1,10 +1,10 @@
 <?php
 
-require_once "../vendor/autoload.php";
+require_once './../../../vendor/autoload.php';
 
 use Dotenv\Dotenv as Dotenv;
 
-$dotenv = Dotenv::createImmutable(__DIR__ . "/../");
+$dotenv = Dotenv::createImmutable('C:\\xampp\\htdocs\\sisaluno\\');
 $dotenv->load();
 
 $hostname = $_ENV['SQL_HOST'];
