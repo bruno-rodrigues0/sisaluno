@@ -2,6 +2,7 @@
 
 abstract class Usuario {
 
+    private string $id;
     private string $nome;
     private string $github;
     private string $email;
@@ -9,7 +10,8 @@ abstract class Usuario {
     private string $senha;
     private DateTime $nascimento;
 
-    public function __construct($nome, $github, $email, $endereço, $senha, $nascimento){
+    public function __construct($id, $nome, $github, $email, $endereço, $senha, $nascimento){
+        $this->setId($id);
         $this->setNome($nome);
         $this->setGithub($github);
         $this->setEmail($email);
@@ -134,6 +136,26 @@ abstract class Usuario {
     public function setNome($nome)
     {
         $this->nome = $nome;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of id
+     */ 
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set the value of id
+     *
+     * @return  self
+     */ 
+    public function setId($id)
+    {
+        $this->id = $id;
 
         return $this;
     }
