@@ -1,6 +1,6 @@
 const tableTemplate = document.createElement('template');
 tableTemplate.innerHTML = `
-
+    
 `;
 
 
