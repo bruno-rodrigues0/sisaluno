@@ -9,30 +9,40 @@ sidemenuTemplate.innerHTML = `
 </div>
 <nav>
     <ul>
-        <li>
-            <slot name="house"></slot>
-            <a href="./index.php">Inicio</a>
-        </li>
-        <li>
-            <slot name="person"></slot>
-            <a href="./professor.php">Professores</a>
-        </li>
-        <li>
-            <slot name="user"></slot>
-            <a href="./aluno.php">Alunos</a>
-        </li>
-        <li>
-            <slot name="database"></slot>
-            <a href="./disciplinas.php">Disciplinas</a>
-        </li>
+        <a href="./index.php">
+            <li>
+                <slot name="house"></slot>
+                <span>Inicio</span>
+            </li>
+        </a>
+        <a href="./professor.php">
+            <li>
+                <slot name="person"></slot>
+                <span>Professores</span>
+            </li>
+        </a>
+        <a href="./aluno.php">
+            <li>
+                <slot name="user"></slot>
+                <span>Alunos</span>
+            </li>
+        </a>
+        <a href="./disciplinas.php">
+            <li>
+                <slot name="database"></slot>
+                <span>Disciplinas</span>
+            </li>
+        </a>
     </ul>
 </nav>
 <nav>
     <ul>
-        <li>      
+    <a href="./index.php">
+        <li>
             <slot name="logout"></slot>
-            <a href="">Sair</a>
+            <span>Sair</span>
         </li>
+    </a>
     </ul>
 </nav>
 </aside>
