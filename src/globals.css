@@ -14,11 +14,6 @@ a{
     color: white;
 }
 
-a:hover{
-    border-bottom: 1px solid white;
-}
-
-
 input{
     border: none;
     border-radius: 8px;
@@ -32,7 +27,7 @@ aside {
     background-color: #223648;
     width: 350px;
     height: 100vh;
-    padding: 32px;
+    padding: 32px 44px;
     color:  white !important;
     display: flex;
     flex-direction: column;
@@ -50,12 +45,21 @@ aside > nav > ul > li > a{
     font-size: larger;
     border-bottom: 1px solid #223648;
     transition: 0.1s ease-in-out;
+    padding: 8px;
 }
+
 
 aside > nav > ul > li {
     display: flex;
     gap: 12px;
+    border-radius: 8px;
     align-items: center;
+    padding-inline: 8px;
+}
+
+
+aside > nav > ul > li:hover{
+ background-color: #2d475d;
 }
 
 aside > div {

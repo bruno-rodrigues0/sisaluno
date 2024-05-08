@@ -1,5 +1,5 @@
 const tableTemplate = document.createElement('template');
-template.innerHTML = `
+tableTemplate.innerHTML = `
 
 `;
 
@@ -8,7 +8,7 @@ class InfoTable extends HTMLElement{
     constructor(){
         super();
         this.attachShadow({ mode: 'open'});
-        this.shadowRoot?.appendChild(template.content.cloneNode(true));
+        this.shadowRoot?.appendChild(tableTemplate.content.cloneNode(true));
     }
 }
 

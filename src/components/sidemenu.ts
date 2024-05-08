@@ -31,7 +31,7 @@ sidemenuTemplate.innerHTML = `
     <ul>
         <li>      
             <slot name="logout"></slot>
-            <a href="">Logout</a>
+            <a href="">Sair</a>
         </li>
     </ul>
 </nav>
