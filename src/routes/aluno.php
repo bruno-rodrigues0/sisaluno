@@ -18,26 +18,18 @@
         <i slot="database" class="fa-solid fa-database"></i>
         <i slot="logout" class="fa-solid fa-right-from-bracket"></i>
     </side-menu>
-    
-    <main>
-        <h2>Lista de alunos cadastrados</h2>
-        <table>
-            <tr>
-                <th>Nome</th>
-                <th>GitHub</th>
-                <th>Email</th>
-                <th>Endereço</th>
-                <th>Nascimento</th>
-            </tr>
-            <tr>
-                <td>Bruno</td>
-                <td>Bruno</td>
-                <td>Bruno</td>
-                <td>Bruno</td>
-                <td>Bruno</td>
-            </tr>
-        </table>
-    </main>
+
+
+    <info-table>
+        <span slot="titulo">Lista de alunos cadastrados</span>
+        <i slot="search" class="fa-solid fa-magnifying-glass pesquisa"></i>
+        <i slot="pen" class="fa-solid fa-pen"></i>
+        <i slot="trash" class="fa-solid fa-trash"></i>
+        <i slot="pen1" class="fa-solid fa-pen"></i>
+        <i slot="trash1" class="fa-solid fa-trash"></i>
+    </info-table>
+
+    <script src="../../dist/components/table.js"></script>
     <script src="../../dist/components/sidemenu.js"></script>
     <script src="https://kit.fontawesome.com/19ad99d8f1.js" crossorigin="anonymous"></script>
 </body>

@@ -1,6 +1,7 @@
 const sidemenuTemplate = document.createElement("template");
 sidemenuTemplate.innerHTML = `
 <link rel="stylesheet" href="./../globals.css">
+<link rel="stylesheet" href="./../styles/sidemenu.css">
 
 <aside>
 <div>

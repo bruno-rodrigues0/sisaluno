@@ -1,0 +1,119 @@
+table {
+    width: 100%;
+    border-radius: 8px;
+    color: rgb(94, 94, 94);
+}
+
+tr{
+    border-collapse: collapse;
+    border: none;
+    gap: 0;
+}
+
+td, th{
+    text-align: start;
+    padding: 4px;
+    border-collapse: collapse;
+    border: none;
+}
+
+.table-container{
+    width: 94%;
+    box-shadow: 1px 1px 10px rgb(190, 190, 190);
+    border-radius: 8px;
+    padding: 16px;
+}
+
+.cid{
+    width: 10%;
+}
+
+.nome {
+    width: 25%;
+}
+
+.github{
+    width: 20%;
+}
+
+.email {
+    width: 25%;
+}
+
+.nascimento {
+    width: 14%;
+}
+
+.action {
+    width: 3%;
+}
+
+.bac{
+    border: none;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.edit {
+    background-color: #45BCFF;
+}
+
+.edit:hover {
+    background-color: #3b9cd4;
+}
+
+.delete {
+    background-color: #FF4545;
+}
+
+.delete:hover {
+    background-color: #cc3737;
+}
+
+.table-container > div {
+    margin-bottom: 8px;
+}
+
+.table-container > div > input {
+    background-color: rgb(230, 230, 230);
+    padding: 8px;
+    outline: none;
+    border-radius: 8px;
+}
+
+.table-container > div > input:focus{
+    outline: none;
+}
+
+.pesquisar {
+    background-color: #45BCFF;
+    border-radius: 8px;
+    border: none;
+    padding: 4px;   
+    transition: .1s ease-in-out;
+}
+
+.cadastrar {
+    width: 15%;
+    background-color: #45BCFF;
+    border-radius: 8px;
+    border: none;
+    padding: 8px;
+    color: white;
+    font-weight: bold;
+    transition: .1s ease-in-out;
+}
+
+.pesquisar:hover, .cadastrar:hover{
+    background-color: #3b9cd4;
+}
+
+h2 {
+    width: 94%;
+    padding: 12px;
+    box-shadow: 1px 1px 10px rgb(190, 190, 190);
+    margin-block: 32px;
+    border-radius: 8px;
+}
