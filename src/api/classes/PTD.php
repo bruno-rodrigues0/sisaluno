@@ -1,9 +1,29 @@
 <?php 
 
-class Leciona {
+class PTD {
+    private int $idDisciplina;
+    private int $idProfessor;
+    private int $nomeTurma;
 
-    private string $idDisciplina;
-    private string $idProfessor;
+    /**
+     * Get the value of nomeTurma
+     */ 
+    public function getNomeTurma()
+    {
+        return $this->nomeTurma;
+    }
+
+    /**
+     * Set the value of nomeTurma
+     *
+     * @return  self
+     */ 
+    public function setNomeTurma($nomeTurma)
+    {
+        $this->nomeTurma = $nomeTurma;
+
+        return $this;
+    }
 
     /**
      * Get the value of idProfessor

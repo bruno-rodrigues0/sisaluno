@@ -1,6 +1,6 @@
 <?php 
 
-class Estuda {
+class Cursa {
     private string $idAluno;
     private string $idDisciplina;
     private float $nota;
