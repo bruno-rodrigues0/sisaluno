@@ -9,5 +9,5 @@ class Aluno extends Usuario {
     }
 }
 
-$aluno = new Aluno("de", 'Bruno', 'bruno-rodrigues0', 'brunorodriguesmtv0@gmail.com', 'Rua Oscar Alho, 666', 'brunno20', "2006-09-09");
-$aluno->createAluno();
+// $aluno = new Aluno("de", 'Bruno', 'bruno-rodrigues0', 'brunorodriguesmtv0@gmail.com', 'Rua Oscar Alho, 666', 'brunno20', "2006-09-09");
+// $aluno->createAluno();
