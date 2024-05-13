@@ -8,14 +8,14 @@ abstract class Usuario {
     private string $email;
     private string $endereco;
     private string $senha;
-    private DateTime $nascimento;
+    private string $nascimento;
 
-    public function __construct($id, $nome, $github, $email, $endereço, $senha, $nascimento){
+    public function __construct($id, $nome, $github, $email, $endereco, $senha, $nascimento){
         $this->setId($id);
         $this->setNome($nome);
         $this->setGithub($github);
         $this->setEmail($email);
-        $this->setEndereco($endereço);
+        $this->setEndereco($endereco);
         $this->setSenha($senha);
         $this->setNascimento($nascimento);
     }
