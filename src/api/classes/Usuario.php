@@ -10,16 +10,6 @@ abstract class Usuario {
     private string $senha;
     private string $nascimento;
 
-    public function __construct($id, $nome, $github, $email, $endereco, $senha, $nascimento){
-        $this->setId($id);
-        $this->setNome($nome);
-        $this->setGithub($github);
-        $this->setEmail($email);
-        $this->setEndereco($endereco);
-        $this->setSenha($senha);
-        $this->setNascimento($nascimento);
-    }
-
     /**
      * Get the value of nascimento
      */ 
