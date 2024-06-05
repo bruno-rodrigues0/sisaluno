@@ -1,4 +1,7 @@
 const tableTemplate = document.createElement('template');
+
+let tableContent = '';
+
 tableTemplate.innerHTML = `
 <link rel="stylesheet" href="./../globals.css">
 <link rel="stylesheet" href="./../styles/table.css">
@@ -24,24 +27,22 @@ tableTemplate.innerHTML = `
         <th class="action"></th>
         <th class="action"></th>
     </tr>
+
     <tr>
-        <td class="cid">01</td>
-        <td class="nome">Bruno Rodrigues</td>
-        <td class="github">bruno-rodrigues0</td>
-        <td class="email">brunorodriguesmtv0@gmail.com</td>
-        <td class="nascimento">09/09/2006</td>
-        <td class="action"> <button class="bac edit"><slot name="pen"></slot></button> </td>
-        <td class="action"> <button class="bac delete"><slot name="trash"></slot></button> </td>
+        <td>01</td>
+        <td>Bruno</td>
+        <td>brunno2019</td>
+        <td>brunorodrigues@gma.com</td>
+        <td>09/09/2006</td>
+        <td><slot name="pen"></slot></td>
+        <td><slot name="trash"></slot></td>
     </tr>
-    <tr>
-        <td class="cid">02</td>
-        <td class="nome">Maria Fernanda Basbosa Firmo</td>
-        <td class="github">fernandafirmo</td>
-        <td class="email">mariafernandabarbosafirmo@gmail.com</td>
-        <td class="nascimento">14/05/2006</td>
-        <td class="action"> <button class="bac edit"><slot name="pen1"></slot></button> </td>
-        <td class="action"> <button class="bac delete"><slot name="trash1"></slot></button> </td>
-    </tr>
+`
++
+// aqui vai o conteúdo processado
+tableContent
++
+`
 </table>
 </div>
 </main>
@@ -56,3 +57,17 @@ class InfoTable extends HTMLElement{
 }
 
 window.customElements.define('info-table', InfoTable);
+
+const constructor = (response: Array<any>) => {
+    response.map(item => {
+        tableContent += 
+        `   <tr>
+                <td>${item?.id} </td>
+                <td>${item?.nome} </td>
+                <td>${item?.github} </td>
+                <td>${item?.email} </td>
+                <td>${item?.nascimento} </td>
+            <tr>
+        `
+    })
+}

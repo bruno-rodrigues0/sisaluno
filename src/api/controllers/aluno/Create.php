@@ -1,6 +1,6 @@
 <?php
 
-function create($nome, $github, $email, $endereco, $senha, $nascimento)
+function createAluno($nome, $github, $email, $endereco, $senha, $nascimento)
 {
     require_once realpath(dirname(__FILE__) . "\\..\\..\\database\\index.php");
 
