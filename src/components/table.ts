@@ -2,6 +2,21 @@ const tableTemplate = document.createElement('template');
 
 let tableContent = '';
 
+
+const constructor = async (response: Array<any>) => {
+    response.map(item => {
+        tableContent += 
+        `   <tr>
+                <td>${item?.id} </td>
+                <td>${item?.nome} </td>
+                <td>${item?.github} </td>
+                <td>${item?.email} </td>
+                <td>${item?.nascimento} </td>
+            <tr>
+        `
+    })
+}
+
 tableTemplate.innerHTML = `
 <link rel="stylesheet" href="./../globals.css">
 <link rel="stylesheet" href="./../styles/table.css">
@@ -57,17 +72,3 @@ class InfoTable extends HTMLElement{
 }
 
 window.customElements.define('info-table', InfoTable);
-
-const constructor = (response: Array<any>) => {
-    response.map(item => {
-        tableContent += 
-        `   <tr>
-                <td>${item?.id} </td>
-                <td>${item?.nome} </td>
-                <td>${item?.github} </td>
-                <td>${item?.email} </td>
-                <td>${item?.nascimento} </td>
-            <tr>
-        `
-    })
-}
