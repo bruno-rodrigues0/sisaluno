@@ -26,6 +26,14 @@
         $response = getAluno();
     ?>
 
+    <script src="../../dist/components/tablee.js"></script>
+    <script>
+        async function call () {
+            await constructor(<?= json_encode($response) ?>)
+        }
+        call()
+     </script>
+
     <info-table>
         <span slot="titulo">Lista de alunos cadastrados</span>
         <i slot="search" class="fa-solid fa-magnifying-glass pesquisa"></i>
@@ -33,11 +41,6 @@
         <i slot="trash" class="fa-solid fa-trash"></i>
     </info-table>
 
-    <script src="../../dist/components/table.js"></script>
-    <script>
-        let jsondata = <?= json_encode($response) ?>
-        constructor(jsondata);
-    </script>
     <script src="../../dist/components/sidemenu.js"></script>
     <script src="https://kit.fontawesome.com/19ad99d8f1.js" crossorigin="anonymous"></script>
 
