@@ -11,6 +11,8 @@ const constructor = async (response: Array<any>) => {
                 <td>${item?.github} </td>
                 <td>${item?.email} </td>
                 <td>${item?.nascimento} </td>
+                <td><i class="fa-solid fa-pen"></i></td>
+                <td> <i class="fa-solid fa-trash"></i></td>
             <tr>
         `
     })
@@ -50,6 +52,8 @@ const constructor = async (response: Array<any>) => {
     </table>
     </div>
     </main>
+
+    <script src="https://kit.fontawesome.com/19ad99d8f1.js" crossorigin="anonymous"></script>
     `;
 }
 
