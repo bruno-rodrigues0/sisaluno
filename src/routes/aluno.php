@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aluno | Sistema aluno</title>
     <link rel="shortcut icon" href="./../../public/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./../globals.css"> 
+    <link rel="stylesheet" href="./../globals.css">
 </head>
 
 
@@ -20,17 +20,17 @@
         <i slot="logout" class="fa-solid fa-right-from-bracket"></i>
     </side-menu>
 
-    <?php 
+    <?php
         require_once(dirname(__FILE__) ."\\..\\api\\controllers\\index.php");
 
         $response = getAluno();
     ?>
 
-    <script src="../../dist/components/tablee.js"></script>
+    <script src="../../dist/components/tableee.js"></script>
     <script>
         async function call () {
-            await constructor(<?= json_encode($response) ?>)
-        }
+            await constructor(<?= json_encode($response) ?>, 'aluno')
+        };
         call()
      </script>
 

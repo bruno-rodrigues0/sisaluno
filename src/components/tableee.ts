@@ -2,20 +2,56 @@ const tableTemplate = document.createElement('template');
 
 let tableContent = '';
 
-const constructor = async (response: Array<any>) => {
+type tipo = 'disc' | 'aluno';
+
+const constructor = async (response: Array<any>, tipo: tipo) => {
+    if(tipo === 'aluno'){
+        tableContent = `
+        <tr>
+            <th class="cid">ID</th>
+            <th class="nome">Nome</th>
+            <th class="github">GitHub</th>
+            <th class="email">Email</th>
+            <th class="nascimento">Nascimento</th>
+            <th class="action"></th>
+            <th class="action"></th>
+        </tr>
+        `
     response.map(item => {
-        tableContent += 
+        tableContent +=
         `   <tr>
                 <td>${item?.id} </td>
                 <td>${item?.nome} </td>
                 <td>${item?.github} </td>
                 <td>${item?.email} </td>
                 <td>${item?.nascimento} </td>
+                <td><slot name="pen"></slot></td>
+                <td><slot name="trash"></slot></td>
+            <tr>
+        `
+    }
+    )} else if(tipo === 'disc'){
+        tableContent = `
+        <tr>
+            <th class="cid">ID</th>
+            <th class="nome">Nome</th>
+            <th class="ch">Carga Horaria</th>
+            <th class="action"></th>
+            <th class="action"></th>
+        </tr>
+        `
+        response.map(item => {
+            tableContent +=
+            `<tr>
+                <td>${item?.id} </td>
+                <td>${item?.nome} </td>
+                <td>${item?.ch} </td>
                 <td><i class="fa-solid fa-pen"></i></td>
                 <td> <i class="fa-solid fa-trash"></i></td>
             <tr>
-        `
-    })
+            `
+    }
+    )}
 
     tableTemplate.innerHTML = `
     <link rel="stylesheet" href="./../globals.css">
@@ -33,15 +69,6 @@ const constructor = async (response: Array<any>) => {
     </div>
 
     <table>
-        <tr>
-            <th class="cid">ID</th>
-            <th class="nome">Nome</th>
-            <th class="github">GitHub</th>
-            <th class="email">Email</th>
-            <th class="nascimento">Nascimento</th>
-            <th class="action"></th>
-            <th class="action"></th>
-        </tr>
 
     `
     +
